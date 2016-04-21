@@ -25,28 +25,29 @@
     }}
     {{include "web2py_ajax.html"}}
   </head>
-  <body class="black">   
-    <nav class="navbar navbar-inverse navbar-fixed-top shadow" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="../" class="navbar-brand">web2py</a>
+  <body class="black">
+
+    <header class="navbar navbar-fixed-top navbar-inverse shadow" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{=URL('default','index')}}" class="navbar-brand">web2py</a>
+            </div>
+            <nav id="bs-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    {{='auth' in globals() and auth.navbar('Welcome',mode='dropdown') or ''}}
+                </ul>
+                {{if response.menu:}}
+                {{=MENU(response.menu, _class='nav navbar-nav',li_class='dropdown',ul_class='dropdown-menu')}}
+                {{pass}}
+            </nav>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            {{='auth' in globals() and auth.navbar('Welcome',mode='dropdown') or ''}}
-          </ul>
-          {{if response.menu:}}
-          {{=MENU(response.menu, _class='nav navbar-nav',li_class='dropdown',ul_class='dropdown-menu')}}
-          {{pass}}
-        </div>
-      </div>
-    </nav>
+    </header>
     {{if response.flash:}}
     <div class="w2p_flash">
       {{=response.flash}}
@@ -104,6 +105,6 @@
 
   <script>
     // prevent android horizontal scrolling
-    window.addEventListener("scroll", function(){window.scroll(0, window.pageYOffset);}, false);
+    //window.addEventListener("scroll", function(){window.scroll(0, window.pageYOffset);}, false);
   </script>
 </html>
