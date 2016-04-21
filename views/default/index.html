@@ -1,0 +1,152 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+<div class="row">
+<div id="index-header" class="shadow">
+  <div class="index-header-text">
+    <div class="container">
+      <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="index-header-content">
+          <h1><a href="{{=URL('')}}">web2py</a></h1>
+          <div class="line-spacer"></div>
+          <p><span>Web Framework</span></p>
+          <div>
+            <a href="{{=URL("default", "download")}}" type="button" class="btn btn-success btn-lg">Download Now</a>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{{end header}}
+
+
+  <section id="about" class=" row index-section">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="section-header">
+         <h2>About</h2>
+         <p>Free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python.</p>
+          <div>
+            <a type="button" class="btn btn-primary btn-lg">What is web2py?</a>
+            <a type="button" class="btn btn-primary btn-lg">Quick Examples</a>
+            <a type="button" class="btn btn-primary btn-lg">Try it now online</a>
+            <a type="button" class="btn btn-primary btn-lg">Sites Powered by web2py</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+<section id="spacer" class="row index-section spacer">
+  <div class="col-md-12">
+    <div>
+      <a href="http://www.infoworld.com/slideshow/24605/infoworlds-2012-technology-of-the-year-award-winners-183313#slide23">
+          <h2 data-wow-delay="1s">InfoWorld.com 2012 AWARDS</h2>
+          <p data-wow-delay="2s">Technology of the year</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" class="row index-section big-section">
+
+  <div class="col-md-offset-2 col-md-8">
+    <div class="section-header">
+     <h2>{{=T('Features')}}</h2>
+     <p>{{=T('')}}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div>
+        <i class="fa fa-code fa-4x"></i>
+        <h4><a href="{{=URL('default', 'what')}}">{{=T('Batteries Included')}}</a></h4>
+        <p>Everything you need in one package including fast multi-threaded web server, SQL database and web-based interface. No third party dependencies but works with <a href="{{=URL('default', 'what')}}">third party tools</a>.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div>
+        <i class="fa fa-cog fa-4x"></i>
+        <h4><a href="http://web2py.com/demo_admin">{{=T('Web-Based IDE')}}</a></h4>
+        <p>Create, modify, deploy and manage application from anywhere using your browser. One web2py instance can run multiple web sites using different databases. Try the <a href="http://www.web2py.com/demo_admin">interactive demo</a>.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div class="service-box wow bounceInDown">
+        <i class="fa fa-cloud fa-4x"></i>
+        <h4><a href="{{=URL('default','documentation')}}">{{=T('Extensive Docs')}}</a></h4>
+        <p>Start with some <a href="{{=URL('default','examples')}}">quick examples</a>, then read the <a href="http://www.web2py.com/book">manual</a> and the <a href="http://web2py.readthedocs.org/en/latest/">Sphinx docs</a>, watch <a href="http://vimeo.com/album/178500">videos</a>, and join a <a href="{{=URL('default','usergroups')}}">user group</a> for discussion. Take advantage of the <a href="http://www.web2py.com/layouts">layouts</a>, <a href="http://www.web2pyslices.com/home?content_type=Package">plugins</a>, <a href="http://www.web2py.com/appliances">appliances</a>, and <a href="http://web2pyslices.com/">recipes</a>.</p>
+      </div>
+    </div>
+   </div>
+</section>
+
+
+<section id="spacer" class="row index-section spacer">
+  <div class="col-md-12">
+    <div>
+      <a href="http://www.infoworld.com/slideshow/24605/infoworlds-2012-technology-of-the-year-award-winners-183313#slide23">
+          <h2 data-wow-delay="1s">InfoWorld.com 2012 AWARDS</h2>
+          <p data-wow-delay="2s">Technology of the year</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="companies" class="row index-section big-section">
+      <div class="col-md-offset-2 col-md-8">
+      <div class="section-header">
+       <h2>Affiliated Companies</h2>
+       <p></p>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+
+      <ul class="lb-album">
+        <li>
+          <a href="http://experts4solutions.com/">
+            <img src="{{=URL('static','images/support/experts4solutions.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.corebyte.nl/">
+            <img src="{{=URL('static','images/support/corebyte.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.budgetbytes.nl/">
+            <img src="{{=URL('static','images/support/budgetbytes.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.nrg.com.br/">
+            <img src="{{=URL('static','images/support/nrg.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="http://i-am.pt/">
+            <img src="{{=URL('static','images/support/iam.png')}}" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.definescope.com">
+            <img src="{{=URL('static','images/support/definescope.png')}}" alt="">
+          </a>
+        </li>
+      </ul>
+
+      </div>
+    </div>
+      <a href="{{=URL('default','support')}}">More...</a>
+</section>
