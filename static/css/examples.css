@@ -261,3 +261,7 @@ footer {
 .btn-primary {
     background-color: #1976D2;
 }
+
+.btn-180 {
+    width: 180px;
+}
