@@ -5,41 +5,61 @@
 
 <h2>web2py<sup style="font-size:0.5em;">TM</sup> Download</h2>
 
+<section class="pad-bot-20">
 
+<div class="row pad-bot-20">
+  <div class="col-md-offset-3 col-md-2">
+    <div class="row">
+      <p>For Normal Users</p>
+    </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_win.zip">For Windows</a>
+    </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_osx.zip">For Mac</a>
+    </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_src.zip">Source Code</a>
+    </div>
+    <div class="row">
+      <a class="btn btn-success btn-180" href="https://dl.dropbox.com/u/18065445/web2py/web2py_manual_5th.pdf">Manual</a>
+    </div>
+  </div>
 
-<div class="row">
-    <div class="col-md-offset-3 col-md-2">
-        <div class="row">
-            <p>For Normal Users</p>
-        </div>
-        <div class="row">
-            <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_win.zip">For Windows</a>
-        </div>
-        <div class="row">
-            <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_osx.zip">For Mac</a>
-        </div>
-        <div class="row">
-            <a class="btn btn-success btn-180" href="http://www.web2py.com/examples/static/web2py_src.zip">Source Code</a>
-        </div>
-        <div class="row">
-            <a class="btn btn-success btn-180" href="https://dl.dropbox.com/u/18065445/web2py/web2py_manual_5th.pdf">Manual</a>
-        </div>
+  <div class="col-md-2">
+    <div class="row">
+      <p>For Testers</p>
     </div>
-
-    <div class="col-md-2">
-        <p>For Testers</p>
-        <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_win.zip">For Windows</a>
-        <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_osx.zip">For Mac</a>
-        <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_src.zip">Source Code</a>
-        <a class="btn btn-default btn-180" href="https://github.com/web2py/web2py/releases">Change Log</a>
+    <div class="row pad-bot-10">
+      <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_win.zip">For Windows</a>
     </div>
-    <div class="col-md-2">
-        <p>For Developers</p>
-        <a class="btn btn-danger btn-180" href="http://github.com/web2py/web2py/">Git Repository</a>
-        <a></a>
-        <a class="btn btn-danger btn-180" href="http://web2py.readthedocs.org/en/latest/">Source code docs</a>
-        <a class="btn btn-default btn-180" href="https://github.com/web2py/web2py/issues">Report a Bug</a>
+    <div class="row pad-bot-10">
+      <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_osx.zip">For Mac</a>
     </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-warning btn-180" href="http://www.web2py.com/examples/static/nightly/web2py_src.zip">Source Code</a>
+    </div>
+    <div class="row">
+      <a class="btn btn-default btn-180" href="https://github.com/web2py/web2py/releases">Change Log</a>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="row">
+      <p>For Developers</p>
+    </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-danger btn-180" class="btn btn-danger btn-180" href="http://github.com/web2py/web2py/">Git Repository</a>
+    </div>
+    <div class="row">
+      <a></a>
+    </div>
+    <div class="row pad-bot-10">
+      <a class="btn btn-danger btn-180" href="http://web2py.readthedocs.org/en/latest/">Source code docs</a>
+    </div>
+    <div class="row">
+      <a class="btn btn-default btn-180" href="https://github.com/web2py/web2py/issues">Report a Bug</a>
+    </div>
+  </div>
 
 </div>
 
@@ -47,35 +67,45 @@
   The source code version works on all supported platforms, including Linux, but it requires Python 2.6, or 2.7 (recommended).
   It runs on Windows and most Unix systems, including <b>Linux</b> and <b>BSD</b>.
 </p>
+</section>
 
+<section class="pad-bot-20">
 <h3>Instructions</h3>
 <p>After download, unzip it and click on web2py.exe (windows) or web2py.app (osx).
   To run from source, type:</p>
 {{=CODE("python2.7 web2py.py", language=None, counter='>', _class='boxCode')}}
 <p>or for more info type:</p>
 {{=CODE("python2.7 web2py.py -h", language=None, counter='>', _class='boxCode')}}
+</section>
 
-
+<section class="pad-bot-20">
 <h3>Caveats</h3>
 <p>After installation, every time you run it, web2py asks you to choose a password. This password is your administrative password. If the password is left blank, the administrative interface is disabled. The administrative interface /admin/default/index is only accessible via localhost and always requires a password.</p>
 <p>Any url /a/b/c maps into a call to application a, controller b.py and function c in that controller.</p>
 <p>You are strongly advised to also use Apache with mod_proxy or mod_wsgi to access applications in the framework. This allows better security and concurrency.</p>
+</section>
 
+<section class="pad-bot-20">
 <h3 id="license">License</h3>
 <p>Web2py code is released under <a href="http://www.gnu.org/licenses/lgpl.html">LGPLv3 License</a>. This license does not extend to third party libraries distributed with web2py (which can be MIT, BSD or Apache type licenses) nor does it extend to applications built with web2py (under the terms of the LGPL.</p>
 <p>Applications built with web2py can be released under any license the author wishes as long they do not contain web2py code. They can link unmodified web2py libraries and they can be distributed with official web2py binaries. In particular web2py applications can be distributed in closed source. The admin interface provides a button to byte-code compile.</p>
 <p>It is fine to distribute web2py (source or compiled) with your applications as long as you make it clear in the license where your application ends and web2py starts.</p>
 <p>web2py is copyrighted by Massimo Di Pierro. The web2py trademark is owned by Massimo Di Pierro.</p>
-<a class="btn btn-small rounded" href="{{=URL('license')}}">read more</a>
+<a class="btn btn-default" href="{{=URL('license')}}">read more</a>
+</section>
 
+<section class="pad-bot-20">
 <h3>Artwork</h3>
 <center>
   <a href="{{=URL('static', 'images/logo_lb.png')}}"><img src="{{=URL('static', 'images/logo_lb.png')}}" width="200px"/></a>
   <a href="{{=URL('static', 'images/logo_db.png')}}"><img src="{{=URL('static', 'images/logo_db.png')}}" width="200px"/></a>
   <a href="{{=URL('static', 'images/logo_bw.png')}}"><img src="{{=URL('static', 'images/logo_bw.png')}}" width="200px"/></a>
 </center>
+</section>
+
+<section class="pad-bot-20">
 <h3>Stickers</h3>
-<center>
+<center class="pad-bot-20">
   <a  href="{{=URL('static', 'images/Stickers1.png')}}"><img src="{{=URL('static', 'images/Stickers1.png')}}" /></a>
   <a  href="{{=URL('static', 'images/Stickers2.png')}}"><img src="{{=URL('static', 'images/Stickers2.png')}}" /></a>
   <a  href="{{=URL('static', 'images/Stickers3.png')}}"><img src="{{=URL('static', 'images/Stickers3.png')}}" /></a>
@@ -85,7 +115,7 @@
   <a  href="{{=URL('static', 'images/Stickers7.png')}}"><img src="{{=URL('static', 'images/Stickers7.png')}}" /></a>
     <a  href="{{=URL('static', 'images/Stickers8.png')}}"><img src="{{=URL('static', 'images/Stickers8.png')}}" /></a>
 </center>
-<p></p>
+</section>
 <p>
   <a href="{{=URL('static', 'artwork.tar.gz')}}" >Download WEB2PY artwork pack in editable .png format</a>
 </p>
